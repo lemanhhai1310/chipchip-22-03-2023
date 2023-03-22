@@ -2,9 +2,62 @@
 <?php $bodyClass = '' ?>
 <?php require "template-parts/layouts/header.php"; ?>
 
-<div class="uk-section-small uk-height-viewport">
+<div class="home__sectionTop uk-section-small uk-padding-remove-bottom">
     <div class="uk-container">
-
+        <div class="uk-child-width-1-2@m" uk-grid>
+            <div>
+                <div><a href=""><img src="images/logo@3-1.png" alt=""></a></div>
+                <h1 class="home__title c1 uk-h1 item__32-24">Lớp học nhóm với <br>
+                    <span class="uk-border-pill" style="background: #B3FFCD;">giáo viên nước ngoài</span> <br>
+                    cho trẻ em</h1>
+                <div class="home__txt item__16">Con luyện tập tiếng Anh thật vui và hiệu quả cùng giáo viên nước ngoài và bạn bè ngay tại nhà. Học phí chỉ từ 50.000đ/buổi.</div>
+                <form class="uk-grid-8 home__form uk-flex-center item__24-16" uk-grid>
+                    <div class="uk-width-expand">
+                        <input class="uk-input home__form__input uk-form-large uk-border-pill" type="text" placeholder="Nhập số điện thoại" aria-label="100">
+                    </div>
+                    <div class="uk-width-auto@s">
+                        <button class="uk-button home__form__btn home__form__btn--c2 uk-width uk-button-primary uk-button-large uk-border-pill">Đăng ký tư vấn</button>
+                    </div>
+                </form>
+            </div>
+            <div>
+                <img class="home__sectionTop__imgRight" src="images/Frame-331.png" alt="">
+            </div>
+        </div>
+        <div class="uk-padding-small home__sectionTop__box uk-box-shadow-medium uk-width">
+            <div class="uk-grid-small uk-grid-32-m uk-child-width-1-3@m" uk-grid>
+                <?php
+                $data = array(
+                    array(
+                        'img' => 'images/Flexed-biceps.png',
+                        'title' => 'Giao tiếp tự tin, phát âm chuẩn',
+                        'txt' => 'Giáo viên nước ngoài giỏi khơi gợi con nói tự tin, cải thiện kỹ năng phát âm và phản xạ trong giao tiếp',
+                    ),
+                    array(
+                        'img' => 'images/Writing-hand.png',
+                        'title' => 'Tăng điểm số ở trường',
+                        'txt' => 'Với chương trình trong lớp và bài tập về nhà được thiết kế bám sát vào khung kiến thức trong SGK tiếng Anh của Bộ Giáo dục & Đào tạo',
+                    ),
+                    array(
+                        'img' => 'images/Grinning-squinting-face.png',
+                        'title' => 'Tương tác vui hơn',
+                        'txt' => 'Mô hình lớp học 1 giáo viên - 2 học sinh; 1 giáo viên - 3 học sinh giúp các con dễ dàng tương tác, hỗ trợ nhau trong lớp. Trải nghiệm học vui & nhiều động lực hơn',
+                    ),
+                );
+                foreach ($data as $v): ?>
+                <div>
+                    <div><img src="<?= $v['img'] ?>" alt=""></div>
+                    <div class="item__16 home__sectionTop__box__title"><?= $v['title'] ?></div>
+                    <div class="item__8 home__sectionTop__box__txt"><?= $v['txt'] ?></div>
+                </div>
+                <?php endforeach; ?>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="uk-section">
+    <div class="uk-container">
+        <h2 class="home__title uk-h2 uk-text-center"><span class="uk-border-pill" style="background: #F8E5A5;">Lớp nhóm tại Chip Chip</span> diễn ra như thế nào?</h2>
     </div>
 </div>
 <!--300 giáo viên nước ngoài có chứng chỉ quốc tế-->
