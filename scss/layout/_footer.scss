@@ -1,0 +1,40 @@
+.footer{
+  &__flex{
+    flex-direction: column;
+    @include media-breakpoint-up('m'){
+      flex-direction: row;
+    }
+    >*{
+      &:nth-child(n+2){
+        display: flex;
+        align-items: center;
+        margin-top: 8px;
+        @include media-breakpoint-up('m'){
+          margin-left: 8px;
+          margin-top: 0;
+        }
+        &:before{
+          @include media-breakpoint-up('m'){
+            content: "";
+            width: 1px;
+            height: 14px;
+            background-color: #333;
+            display: flex;
+            margin-right: 8px;
+          }
+        }
+      }
+    }
+  }
+  &__txt{
+    color: #333333;
+    font-size: 14px;
+    line-height: 1.29;
+    font-family: $SF-Pro-Rounded-Medium;
+    font-weight: 500;
+  }
+  &__txt1{
+    @extend .footer__txt;
+    color: #595959;
+  }
+}

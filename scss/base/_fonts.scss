@@ -1,78 +1,26 @@
 /**
  * --------------------------------------------------------------------
- * Arial
+ * SF Pro Rounded
  * --------------------------------------------------------------------
  */
 @font-face{
-  font-family:'Arial Regular';
+  font-family:'SF Pro Rounded Semibold';
   font-display: swap;
-  src:local('Arial Regular'), url('fonts/Arial/arial.ttf') format('truetype');
-  font-weight:normal;
-  font-style:normal;
-}
-/**
- * --------------------------------------------------------------------
- * Verdana
- * --------------------------------------------------------------------
- */
-@font-face{
-  font-family:'Verdana Regular';
-  font-display: swap;
-  src:local('Verdana Regular'), url('fonts/Fonts/Verdana.ttf') format('truetype');
+  src:local('SF Pro Rounded Semibold'), url('fonts/SF-Pro-Rounded/SF-Pro-Rounded-Semibold.otf') format('truetype');
   font-weight:normal;
   font-style:normal;
 }
 @font-face{
-  font-family:'Verdana Bold';
+  font-family:'SF Pro Rounded Regular';
   font-display: swap;
-  src:local('Verdana Bold'), url('fonts/Fonts/Verdana-Bold.ttf') format('truetype');
-  font-weight:normal;
-  font-style:normal;
-}
-/**
- * --------------------------------------------------------------------
- * Roboto
- * --------------------------------------------------------------------
- */
-@font-face{
-  font-family:'Roboto Regular';
-  font-display: swap;
-  src:local('Roboto Regular'), url('fonts/Fonts/Roboto-Regular.ttf') format('truetype');
+  src:local('SF Pro Rounded Regular'), url('fonts/SF-Pro-Rounded/SF-Pro-Rounded-Regular.otf') format('truetype');
   font-weight:normal;
   font-style:normal;
 }
 @font-face{
-  font-family:'Roboto Black';
+  font-family:'SF Pro Rounded Medium';
   font-display: swap;
-  src:local('Roboto Black'), url('fonts/Fonts/Roboto-Black.ttf') format('truetype');
-  font-weight:normal;
-  font-style:normal;
-}
-@font-face{
-  font-family:'Roboto Bold Italic';
-  font-display: swap;
-  src:local('Roboto Bold Italic'), url('fonts/Fonts/Roboto-BoldItalic.ttf') format('truetype');
-  font-weight:normal;
-  font-style:normal;
-}
-@font-face{
-  font-family:'Roboto Bold';
-  font-display: swap;
-  src:local('Roboto Bold'), url('fonts/Fonts/Roboto-Bold.ttf') format('truetype');
-  font-weight:normal;
-  font-style:normal;
-}
-@font-face{
-  font-family:'Roboto Medium';
-  font-display: swap;
-  src:local('Roboto Medium'), url('fonts/Fonts/Roboto-Medium.ttf') format('truetype');
-  font-weight:normal;
-  font-style:normal;
-}
-@font-face{
-  font-family:'Roboto Light Italic';
-  font-display: swap;
-  src:local('Roboto Light Italic'), url('fonts/Fonts/Roboto-LightItalic.ttf') format('truetype');
+  src:local('SF Pro Rounded Medium'), url('fonts/SF-Pro-Rounded/SF-Pro-Rounded-Medium.otf') format('truetype');
   font-weight:normal;
   font-style:normal;
 }

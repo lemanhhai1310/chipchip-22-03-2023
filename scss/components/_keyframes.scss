@@ -1,0 +1,81 @@
+.slider{
+  &__container{
+    overflow: hidden;
+    white-space: nowrap;
+
+    &__wrapper{
+      display: inline-block;
+      white-space: nowrap;
+      overflow: hidden;
+      &.c1{
+        animation: slide 120s linear infinite;
+        @include media-breakpoint-up('m'){
+          animation: slide 80s linear infinite;
+        }
+        &:hover{
+          -webkit-animation-play-state:paused;
+          -moz-animation-play-state:paused;
+          -o-animation-play-state:paused;
+          animation-play-state:paused;
+          cursor: pointer;
+        }
+      }
+      &.c2{
+        animation: slide 140s linear infinite;
+        @include media-breakpoint-up('m'){
+          animation: slide 100s linear infinite;
+        }
+        &:hover{
+          -webkit-animation-play-state:paused;
+          -moz-animation-play-state:paused;
+          -o-animation-play-state:paused;
+          animation-play-state:paused;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+@-webkit-keyframes slide {
+  from {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0)
+  }
+  to {
+    -webkit-transform: translate3d(-50%, 0, 0);
+    transform: translate3d(-50%, 0, 0)
+  }
+}
+
+@-moz-keyframes slide {
+  from {
+    -moz-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0)
+  }
+  to {
+    -moz-transform: translate3d(-50%, 0, 0);
+    transform: translate3d(-50%, 0, 0)
+  }
+}
+
+@-o-keyframes slide {
+  from {
+    transform: translate3d(0, 0, 0)
+  }
+  to {
+    transform: translate3d(-50%, 0, 0)
+  }
+}
+
+@keyframes slide {
+  from {
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0)
+  }
+  to {
+    -webkit-transform: translate3d(-50%, 0, 0);
+    -moz-transform: translate3d(-50%, 0, 0);
+    transform: translate3d(-50%, 0, 0)
+  }
+}

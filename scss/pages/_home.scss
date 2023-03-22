@@ -1,0 +1,89 @@
+.home{
+  &__bgGreen{
+    background: #4DC562;
+  }
+  &__title{
+    @include fluidx(32px,24px,font-size);
+    line-height: 1.25;
+    font-family: $SF-Pro-Rounded-Semibold;
+    font-weight: 600;
+    color: #333333;
+    margin: 0;
+    span{
+      padding: 0 9px;
+    }
+  }
+  &__txt{
+    line-height: 1.33;
+    font-size: 15px;
+  }
+  &__accordion{
+    &__title{
+      line-height: 1.33;
+      font-size: 18px;
+      color: #333333;
+      font-family: $SF-Pro-Rounded-Semibold;
+      font-weight: 600;
+      &:before{
+        background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='12' cy='12' r='11.25' stroke='%23828282' stroke-width='1.5'/%3E%3Cpath d='M7 12H17' stroke='%23828282' stroke-width='1.5' stroke-linecap='round'/%3E%3Cpath d='M12 7L12 17' stroke='%23828282' stroke-width='1.5' stroke-linecap='round'/%3E%3C/svg%3E%0A");
+        .uk-open> &{
+          background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='12' cy='12' r='11.25' stroke='%23828282' stroke-width='1.5'/%3E%3Cpath d='M7 12H17' stroke='%23828282' stroke-width='1.5' stroke-linecap='round'/%3E%3C/svg%3E%0A");
+        }
+      }
+    }
+    &__content{
+      line-height: 1.5;
+      margin-top: 8px;
+      padding-right: 48px;
+    }
+    &__li{
+      &:nth-child(n+2){
+        padding-top: 24px;
+        margin-top: 24px;
+        border-top: 1px solid #F2F2F2;
+      }
+    }
+  }
+  &__giaovien{
+    &__coverImg{
+      border-radius: 12px;
+    }
+  }
+  &__form{
+    &__input{
+      height: 52px;
+      font-size: 16px !important;
+      font-family: $SF-Pro-Rounded-Regular;
+      font-weight: 400;
+      .uk-section-primary &{
+        color: #5E5E5E !important;
+        background: #FFFFFF !important;
+        &::placeholder{
+          color: #5E5E5E !important;
+        }
+      }
+    }
+    &__btn{
+      &--c1{
+        color: #4DC562;
+        border-color: #4DC562;
+        background: #fff;
+        &:hover{
+          background: #4DC562;
+        }
+      }
+      line-height: 42px;
+      &.uk-button-large{
+        line-height: 50px;
+      }
+      text-transform: inherit;
+      padding: 0 16px;
+      font-family: $SF-Pro-Rounded-Semibold;
+      font-weight: 600;
+      font-size: 16px;
+      .uk-section-primary &{
+        color: #4DC562 !important;
+      }
+    }
+  }
+}
