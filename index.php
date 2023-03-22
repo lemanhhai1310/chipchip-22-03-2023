@@ -58,6 +58,60 @@
 <div class="uk-section">
     <div class="uk-container">
         <h2 class="home__title uk-h2 uk-text-center"><span class="uk-border-pill" style="background: #F8E5A5;">Lớp nhóm tại Chip Chip</span> diễn ra như thế nào?</h2>
+        <div class="uk-child-width-expand@m item__32-24" uk-grid>
+            <?php
+            $data = array(
+                array(
+                    'img1' => 'ix1.png',
+                    'img2' => 'ic1.png',
+                    'title' => 'Ghép nhóm',
+                    'txt' => 'Học sinh thuộc cùng khối lớp, thời gian học sẽ được ghép thành các nhóm lớp có 2 học sinh hoặc 3 học sinh',
+                ),
+                array(
+                    'img1' => 'ix2.png',
+                    'img2' => 'ic2.png',
+                    'title' => 'Đặt lịch học cố định',
+                    'txt' => 'Nhóm học được đặt cố định lịch hàng tuần với giáo viên nước ngoài. Số buổi học mỗi tuần linh hoạt theo mong muốn của phụ huynh học sinh',
+                ),
+                array(
+                    'img1' => 'ix3.png',
+                    'img2' => 'ic3.png',
+                    'title' => 'Vào lớp học',
+                    'txt' => 'Đến giờ vào lớp, học sinh truy cập vào máy tính qua website Chip Chip hoặc ứng dụng Chip Chip Classroom trên máy tính bảng để bắt đầu học tập cùng giáo viên nước ngoài và các bạn',
+                ),
+                array(
+                    'img1' => 'ix4.png',
+                    'img2' => 'ic4.png',
+                    'title' => 'Luyện tập sau buổi học',
+                    'txt' => 'Củng cố thêm kiến thức đã học qua việc làm các bài tập về nhà được thiết kế dưới dạng game tương tác vui nhộn ngay trên app Chip Chip',
+                ),
+            );
+            foreach ($data as $k=>$v): ?>
+            <div class="home__timeLine__column">
+                <div class="home__timeLine__relative">
+                    <div class="uk-grid-16-m uk-grid-8" uk-grid>
+                        <div class="uk-width-auto uk-width-1-1@m uk-text-center">
+                            <div class="home__timeLine__boxCount uk-cover-container uk-flex-inline uk-border-circle uk-background-muted">
+                                <canvas width="32" height="32"></canvas>
+                                <span class="uk-position-center"><?= $k+1 ?></span>
+                            </div>
+                        </div>
+                        <div class="uk-width-expand">
+                            <div class="uk-cover-container">
+                                <img src="images/<?= $v['img1'] ?>" alt="" uk-cover="">
+                                <canvas width="256" height="186"></canvas>
+                            </div>
+                            <div class="uk-flex-middle home__timeLine__title uk-flex item__16">
+                                <img src="images/<?= $v['img2'] ?>" alt="">
+                                <?= $v['title'] ?>
+                            </div>
+                            <div class="home__txt item__8"><?= $v['txt'] ?></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <?php endforeach; ?>
+        </div>
     </div>
 </div>
 <!--300 giáo viên nước ngoài có chứng chỉ quốc tế-->
