@@ -1,6 +1,12 @@
 <?php $data["title"] = "Home"; ?>
 <?php $bodyClass = '' ?>
 <?php require "template-parts/layouts/header.php"; ?>
+
+<div class="uk-section-small uk-height-viewport">
+    <div class="uk-container">
+
+    </div>
+</div>
 <!--300 giáo viên nước ngoài có chứng chỉ quốc tế-->
 <div class="uk-section uk-section-muted">
     <div class="uk-container">
@@ -16,21 +22,21 @@
                 <div class="uk-grid-32-m uk-grid-16 uk-flex-nowrap" style="width: max-content" uk-grid>
                     <?php
                     $data1 = array(
+                        'images/photo.jpg',
                         'images/21.png',
+                        'images/light.jpg',
                         'images/22.png',
+                        'images/lemanhhai_anhthe.jpg',
                         'images/23.png',
+                        'images/dark.jpg',
                         'images/24.png',
+                        'images/slider1.jpeg',
                         'images/25.png',
+                        'images/slider2.jpeg',
                         'images/26.png',
+                        'images/slider4.jpeg',
                         'images/27.png',
-                        'images/28.png',
-                        'images/21.png',
-                        'images/22.png',
-                        'images/23.png',
-                        'images/24.png',
-                        'images/25.png',
-                        'images/26.png',
-                        'images/27.png',
+                        'images/slider3.jpeg',
                         'images/28.png',
                     );
                     foreach ($data1 as $value): ?>
@@ -45,27 +51,27 @@
                 </div>
             </div>
         </div>
-        <div class="slider__container item__22-8">
+        <div class="slider__container item__32-16">
             <div class="slider__container__wrapper c2">
                 <div class="uk-grid-32-m uk-grid-16 uk-flex-nowrap" style="width: max-content" uk-grid>
                     <?php
                     $data2 = array(
                         'images/28.png',
+                        'images/noimage.jpg',
                         'images/27.png',
+                        'images/noimage.jpg',
                         'images/26.png',
+                        'images/noimage.jpg',
                         'images/25.png',
+                        'images/noimage.jpg',
                         'images/24.png',
+                        'images/noimage.jpg',
                         'images/23.png',
+                        'images/photo.jpg',
                         'images/22.png',
+                        'images/light.jpg',
                         'images/21.png',
-                        'images/28.png',
-                        'images/27.png',
-                        'images/26.png',
-                        'images/25.png',
-                        'images/24.png',
-                        'images/23.png',
-                        'images/22.png',
-                        'images/21.png',
+                        'images/dark.jpg',
                     );
                     foreach ($data2 as $value): ?>
                         <div>
@@ -79,29 +85,10 @@
                 </div>
             </div>
         </div>
-        <div class="slider__container item__22-8 uk-hidden@m">
-            <div class="slider__container__wrapper c1">
+        <div class="slider__container item__32-16 uk-hidden@m">
+            <div class="slider__container__wrapper c3">
                 <div class="uk-grid-32-m uk-grid-16 uk-flex-nowrap" style="width: max-content" uk-grid>
-                    <?php
-                    $data1 = array(
-                        'images/21.png',
-                        'images/22.png',
-                        'images/23.png',
-                        'images/24.png',
-                        'images/25.png',
-                        'images/26.png',
-                        'images/27.png',
-                        'images/28.png',
-                        'images/21.png',
-                        'images/22.png',
-                        'images/23.png',
-                        'images/24.png',
-                        'images/25.png',
-                        'images/26.png',
-                        'images/27.png',
-                        'images/28.png',
-                    );
-                    foreach ($data1 as $value): ?>
+                    <?php foreach ($data1 as $value): ?>
                         <div>
                             <div class="home__giaovien__coverImg uk-cover-container uk-border-rounded">
                                 <img src="<?= $value ?>" alt="" uk-cover="">
@@ -119,8 +106,87 @@
 
 <div class="uk-section">
     <div class="uk-container">
-        <div class="uk-card uk-card-body uk-background-muted">
-
+        <!--Chương trình tiếng Anh vừa thúc đẩy giao tiếp vừa giúp tăng điểm số-->
+        <div class="home__chuongtrinh__card uk-card">
+            <h2 class="home__title uk-h2 uk-text-center">Chương trình tiếng Anh <span class="uk-border-pill" style="background: #F8BAD7;">vừa thúc đẩy giao tiếp vừa giúp tăng điểm số</span></h2>
+            <div class="uk-child-width-1-2@m item__24" uk-grid>
+                <div>
+                    <div class="uk-card-body" uk-toggle="cls: uk-card-body; mode: media; media: @m">
+                        <div class="uk-grid-32-m uk-grid-small uk-child-width" uk-grid>
+                            <?php
+                            $data = array(
+                                array(
+                                    'img' => 'images/img1.png',
+                                    'txt1' => 'Nội dung tương tác, hình ảnh bắt mắt',
+                                    'txt2' => 'Bài giảng sinh động, đúng với khả năng của trẻ, giúp con hiểu bài nhanh, tạo sự hứng thú xuyên suốt buổi học',
+                                ),
+                                array(
+                                    'img' => 'images/img2.png',
+                                    'txt1' => 'Giúp con đạt điểm cao môn tiếng Anh ở trường',
+                                    'txt2' => 'Nội dung chương trình được thiết kế bám theo khung kiến thức trong Sách Giáo Khoa tiếng Anh của Bộ Giáo dục và Đào tạo, giúp củng cố thêm vốn từ vựng và ngữ pháp của con, tự tin đạt điểm cao trong các kỳ thi tiếng Anh tại trường',
+                                ),
+                                array(
+                                    'img' => 'images/img3.png',
+                                    'txt1' => 'Bài tập về nhà thú vị, không nhàm chán',
+                                    'txt2' => 'Con vừa học vừa chơi mà vẫn nắm chắc kiến thức tiếng Anh ở trường nhờ hệ thống bài tập về nhà được thiết kế dưới dạng game tương tác vui nhộn',
+                                ),
+                            );
+                            foreach ($data as $k=>$v): ?>
+                            <div>
+                                <div class="uk-grid-16-m uk-grid-8" uk-grid>
+                                    <div class="uk-width-auto@s">
+                                        <div class="home__chuongtrinh__card__coverImg uk-cover-container uk-background-default uk-border-circle">
+                                            <img class="uk-position-center" src="<?= $v['img'] ?>" alt="">
+                                            <canvas width="60" height="60"></canvas>
+                                        </div>
+                                    </div>
+                                    <div class="uk-width-expand">
+                                        <div class="home__chuongtrinh__card__title"><?= $v['txt1'] ?></div>
+                                        <div class="item__8 home__chuongtrinh__card__txt"><?= $v['txt2'] ?></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <?php endforeach; ?>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <img class="uk-width uk-visible@m" src="images/Group17.png" alt="">
+                    <img class="uk-width uk-hidden@m" src="images/Group17-2.png" alt="">
+                </div>
+            </div>
+        </div>
+        <!--/Chương trình tiếng Anh vừa thúc đẩy giao tiếp vừa giúp tăng điểm số-->
+    </div>
+    <div class="uk-container item__64-32">
+        <h2 class="home__title uk-h2 uk-text-center">Tự hào giúp hàng ngàn trẻ em <span class="uk-border-pill" style="background: #A5E4F8;">nói tiếng Anh tự tin, phát âm chuẩn</span></h2>
+    </div>
+    <div class="uk-container home__hocsinh__container uk-container-expand-right item__48-24">
+        <div class="uk-overflow-auto home__hocsinh__overflow">
+            <div class="uk-grid-32-m uk-flex-nowrap" style="width: max-content" uk-grid>
+                <?php for ($i=1;$i<=16;$i++): ?>
+                    <div>
+                        <div class="uk-cover-container home__hocsinh__box uk-light">
+                            <img src="images/slider1.jpeg" alt="" uk-cover="">
+                            <canvas width="256" height="366"></canvas>
+                            <div class="home__hocsinh__box__overlay uk-overlay-primary uk-position-bottom"></div>
+                            <img class="uk-position-center" src="images/btn_play.png" alt="">
+                            <div class="uk-position-bottom uk-position-small">
+                                <div class="home__hocsinh__box__name">Phạm Thảo Linh</div>
+                                <div class="uk-grid-small item__8" uk-grid>
+                                    <div>
+                                        <div class="uk-flex uk-flex-middle home__hocsinh__box__txt"><img src="images/birthday.png" alt="">7 tuổi</div>
+                                    </div>
+                                    <div>
+                                        <div class="uk-flex uk-flex-middle home__hocsinh__box__txt"><img src="images/medal.png" alt="">Đã học 90 buổi</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="" class="uk-position-cover"></a>
+                        </div>
+                    </div>
+                <?php endfor; ?>
+            </div>
         </div>
     </div>
 </div>

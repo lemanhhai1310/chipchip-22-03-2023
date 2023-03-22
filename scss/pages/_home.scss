@@ -46,7 +46,84 @@
   }
   &__giaovien{
     &__coverImg{
-      border-radius: 12px;
+      @include fluidx(12px,8px,border-radius);
+      canvas{
+        @include fluidx(256px,161px,width);
+      }
+    }
+  }
+  &__hocsinh{
+    &__container{
+      @include media-breakpoint-up('m'){
+        //width: calc(100% + 40px - 40px);
+        //padding-left: 0;
+        //padding-right: 0;
+      }
+    }
+    &__overflow{
+      padding-bottom: 15px;
+    }
+    &__box{
+      background: #D9D9D9;
+      border-radius: 16px;
+      &__overlay{
+        top: 35%;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.235633) 23.56%, #010101 100%);
+      }
+      &__name{
+        color: #FFFFFF;
+        line-height: 1.33;
+        font-size: 18px;
+        font-weight: 600;
+        font-family: $SF-Pro-Rounded-Semibold;
+      }
+      &__txt{
+        font-size: 14px;
+        line-height: 1.29;
+        font-family: $SF-Pro-Rounded-Regular;
+        font-weight: 400;
+        img{
+          margin-right: 4px;
+        }
+      }
+    }
+  }
+  &__chuongtrinh{
+    &__card{
+      background-color: #fff;
+      border-radius: 24px;
+      @include media-breakpoint-up('m'){
+        padding-top: 48px;
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 0;
+        background-color: #f8f8f8;
+        overflow: hidden;
+      }
+      &__coverImg{
+        border: 1px solid #F2F2F2;
+        display: inline-flex;
+        img{
+          @include fluidx(40px,26px,width);
+        }
+        canvas{
+          @include fluidx(60px,40px,width);
+        }
+      }
+      &__title{
+        color: #333333;
+        @include fluidx(18px,16px,font-size);
+        line-height: 1.33;
+        font-family: $SF-Pro-Rounded-Semibold;
+        font-weight: 600;
+      }
+      &__txt{
+        color: #5E5E5E;
+        font-size: 15px;
+        font-family: $SF-Pro-Rounded-Regular;
+        font-weight: 400;
+        line-height: 1.33;
+      }
     }
   }
   &__form{
@@ -67,7 +144,7 @@
       &--c1{
         color: #4DC562;
         border-color: #4DC562;
-        background: #fff;
+        background: transparent;
         &:hover{
           background: #4DC562;
         }
