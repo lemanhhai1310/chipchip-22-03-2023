@@ -20,7 +20,7 @@
 <body class="">
 <!--app-->
 <div id="app" class="uk-height-viewport uk-offcanvas-content uk-overflow-hidden uk-position-relative">
-    <div class="floating-shapes">
+    <div class="floating-shapes uk-hidden">
         <span uk-parallax='{"x": 50, "y": -20, "rotateZ":500}'>
             <img src="imgs/shape/Theme=3D-1.png" alt="">
         </span>

@@ -57,7 +57,7 @@
       backdrop-filter: blur(50px);
       /* Note: backdrop-filter has minimal browser support */
       border-radius: 24px;
-      margin-top: -88px;
+      margin-top: -101px;
       position: relative;
       @include media-breakpoint-up('m'){
         padding: 24px;
@@ -234,6 +234,9 @@
       }
       &--c2{
         background: #4DC562;
+        &:hover{
+          background: rgba(#4DC562,.8);
+        }
       }
       line-height: 42px;
       &.uk-button-large{
