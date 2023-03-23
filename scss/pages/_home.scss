@@ -57,11 +57,12 @@
       backdrop-filter: blur(50px);
       /* Note: backdrop-filter has minimal browser support */
       border-radius: 24px;
-      margin-top: -101px;
       position: relative;
+      //margin-top: -101px;
+      @include fluidx(-155px,-101px,margin-top);
       @include media-breakpoint-up('m'){
         padding: 24px;
-        margin-top: -155px;
+        //margin-top: -155px;
       }
       &__title{
         color: #333333;
